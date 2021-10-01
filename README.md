@@ -3,7 +3,7 @@
 Please follow the procedure to incorporate new task in CASA 6 given over here:
 https://casadocs.readthedocs.io/en/stable/api/casashell/buildmytasks.html
 
-Once the task is ready to be used, follow the example given below to run the task for your image.
+Once the task is ready to be used, follow the examples given below to run the task for your image.
 -----------------------------------------------------------------------------------------------------
 Example 1:
 Suppose test.ms is the visibility file containing 4 spectral windows (0, 1, 2 and 3) containing 20 channels each. An image with the name "target" (prefix) is produced using nterms = 2 in tclean. 
