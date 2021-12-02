@@ -11,16 +11,27 @@ Suppose test.ms is the visibility file containing 4 spectral windows (0, 1, 2 an
 Following will be the inputs for the task.
 
 vis           = 'test.ms'                      # Name of measurement set.
+
 imagename     = 'target'                      # Name-prefix of multi-termimages to operate on.
+
 nterms        = 2                       # Number of taylor terms to use
+
 threshold     = ''                      # Intensity above which to re-calculate spectral index
+
 action        = 'pbcor'                 # PB-correction (pbcor) or only calc spectral-index (calcalpha)
+
 reffreq    = ''                      # Reference frequency (if specified in clean)
+
 pbmin      = 0.1                     # PB threshold below which to not correct
+
 field      = ''                      # Fields to include in the PB calculation
+
 spwlist    = [0,1,2,3]                      # List of N spw ids
+
 chanlist   = [10,10,10,10]                      # List of N channel ids
+
 weightlist = [1,1,1,1]         
+
 
 -----------------------------------------------------------------------------------------------------
 Example 2:
@@ -32,13 +43,24 @@ example I have chosen n=5.
 Following will be the inputs for the task.
 
 vis           = 'test.ms'                      # Name of measurement set.
+
 imagename     = 'target'                      # Name-prefix of multi-termimages to operate on.
+
 nterms        = 2                       # Number of taylor terms to use
+
 threshold     = ''                      # Intensity above which to re-calculate spectral index
+
 action        = 'pbcor'                 # PB-correction (pbcor) or only calc spectral-index (calcalpha)
+
 reffreq    = ''                      # Reference frequency (if specified in clean)
+
 pbmin      = 0.1                     # PB threshold below which to not correct
+
 field      = ''                      # Fields to include in the PB calculation
+
 spwlist    = [0,0,0,0,0]                      # List of N spw ids
+
 chanlist   = [40,80,120,140]                      # List of N channel ids
+
 weightlist = [1,1,1,1,1]         
+
