@@ -244,7 +244,8 @@ def _makePBList(msname='',pbprefix='',field='',spwlist=[],chanlist=[], imsize=[]
                              nchan=1,start=chanlist[aspw], stokes='I',
                              mode='channel',spw=[spwlist[aspw]],phasecenter=phasecenter);
          if (1.25<freq<2.5): # Band 2
-             casalog.post("Primary beam parameters are not yet available for this band.")
+             #casalog.post("Primary beam parameters are not yet available for this band.")
+             vp.setpbpoly(telescope ='GMRT',  usesymmetricbeam=True, coeff=np.array([1, -1.732e-3, 16.334e-7, -6.387e-10,   0.888e-13])) # frequencywise polynomial to be given here
          elif (2.5<freq<5.0):# Band 3
              vp.setpbpoly(telescope ='GMRT',  usesymmetricbeam=True, coeff=np.array([1, -2.939e-3, 33.312e-7, -16.659e-10,   3.066e-13])) # frequencywise polynomial to be given here
          elif (5.5<freq<9.5): # Band 4
