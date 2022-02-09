@@ -1,5 +1,7 @@
 # uGMRTprimarybeam-CASA6
 
+Note: Currently the primary beam parameters for bands 3, 4 and 5 can be used. The ones for band-2 are still not released for general use.
+
 Please follow the procedure to incorporate new task in CASA 6 given over here:
 https://casadocs.readthedocs.io/en/stable/api/casashell/buildmytasks.html
 
