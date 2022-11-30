@@ -30,7 +30,7 @@ field      = ''                      # Fields to include in the PB calculation
 
 spwlist    = [0,1,2,3]                      # List of N spw ids
 
-chanlist   = [10,10,10,10]                      # List of N channel ids
+chanlist   = [10,10,10,10]                      # List of N channel ids - a channel number in each spw is needed
 
 weightlist = [1,1,1,1]         
 
